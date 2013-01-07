@@ -1,0 +1,16 @@
+<div id="grid_here" style="width:600px; height:400px;">
+</div>
+<script type="text/javascript" charset="utf-8">
+    var grid = new dhtmlXGridObject("grid_here");
+    grid.setImagePath("/images/dhtmlx/imgs/");
+    grid.setHeader("Title, Location, Notes");
+    grid.setInitWidths("150,150,*");
+    grid.setSkin("dhx_skyblue");
+    grid.init();
+    grid.load("/home/data.xml");
+
+    var dp = new dataProcessor("/home/dbaction.xml");
+    dp.init(grid);
+</script>
+<input type="button" value="Add" onclick="grid.addRow(grid.uid(),'new appointment')">
+<input type="button" value="Delete" onclick="grid.deleteSelectedRows()">
