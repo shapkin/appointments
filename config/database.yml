@@ -19,7 +19,9 @@ test:
   password: "1234"
 
 production:
-  adapter: mysql2
-  database: appointments
-  username: root
-  password: "1234"
+  host: ec2-54-243-224-229.compute-1.amazonaws.com
+  adapter: postgresql
+  database: dadav3gfgtvluv
+  username: jequpwfttlgqad
+  password: "N1bEOhZjXzU4OOs8-osna5Q5-c"
+  port: 5432
